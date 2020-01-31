@@ -19,7 +19,7 @@
         </div>
       </header>
       <main class="main">
-        <h1 class="main__title">Perform a credit simulation using your asset as collateral or guarantee.</h1>
+        <h1 class="main__title">Perform a loan simulation using your asset as collateral.</h1>
         <section class="section__container">
           <form class="form" name="form">
             <div class="form__fields">
@@ -39,15 +39,15 @@
                   </select>
                 </div>
               </div>
-              <div class="collateral-amount">
+              <div class="collateral-value">
                 <div class="field-group">
                   <div class="field">
-                    <label for="collateral-amount">Collateral Amount</label>
-                    <input type="text" required name="collateral-amount" id="collateral-amount" value="14400" />
+                    <label for="collateral-value">Collateral Value</label>
+                    <input type="text" required name="collateral-value" id="collateral-value" value="14400" />
                   </div>
                   <div class="field">
                     <div class="range">
-                      <input type="range" name="collateral-amount-range" id="collateral-amount-range" min="0" max="100" value="20" step="10">
+                      <input type="range" name="collateral-value-range" id="collateral-value-range" min="0" max="100" value="20" step="10">
                       <div class="range__values">
                         <span>12.000</span>
                         <span>24.000</span>
@@ -76,7 +76,7 @@
             </div>
             <div class="form__result">
               <div class="quota__container">
-                <h4>Installment Value</h4>
+                <h4>Monthly installment</h4>
                 <div class="quota">
                   <strong>R$</strong>
                   <span>465,00</span>
