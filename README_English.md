@@ -19,7 +19,7 @@ Both the interface as well as the styles are provided. The challenges include re
 Feel free to componentize whatever you think should be componentized. Our only request is that you use only pure JavaScript, our beloved Vanilla. Do you accept the challenge?
 
 The calculator's current state:
-<img style="display: block; margin: 0 auto;" src="./layout.png">
+<img style="display: block; margin: 0 auto;" src="./layout_en.png">
 
 
 ### Expected functionalities
