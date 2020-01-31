@@ -33,8 +33,8 @@ import CreditasChallenge, {
 function initializeAppMock () {
   document.body.innerHTML = `
     <form class="form" data-testid="form">
-      <label for="collateral-amount">Collateral Amount</label>
-      <input id="collateral-amount" required />
+      <label for="collateral-value">Collateral Amount</label>
+      <input id="collateral-value" required />
       <button type="button"></button>
     </form>
   `
