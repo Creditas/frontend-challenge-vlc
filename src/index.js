@@ -17,8 +17,8 @@ export const toStringFormValues = values => {
   const TIME = values.find(match('installments')).value / 1000
   const VEHICLE_LOAN_AMOUNT = values.find(match('loan-amount')).value
 
-  return `Confirmação\n${values
-    .map(value => `Campo: ${value.field}, Valor: ${value.value}`)
+  return `OUTPUT\n${values
+    .map(value => `${value.field} --> ${value.value}`)
     .join('\n')}`.concat(
       `\nTotal ${(IOF + INTEREST_RATE + TIME + 1) * VEHICLE_LOAN_AMOUNT}`
     )
@@ -76,8 +76,8 @@ export default class CreditasChallenge {
     Submit(document.querySelector('.form'))
 
     handleChangeRangeVehicleUnderWarranty(
-      document.getElementById('collateral-amount-range'),
-      document.getElementById('collateral-amount')
+      document.getElementById('collateral-value-range'),
+      document.getElementById('collateral-value')
     )
 
     handleChangeVehicleLoanAmount(
