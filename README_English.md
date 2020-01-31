@@ -94,7 +94,7 @@ When the user clicks the ajuda link, we need to display an alert with the follow
 *Question: Can you help me?.</br>Answer: Yes, sure*
 
 You will have to consider the following:
-- Each endpoint takes 10 seconds to response, so it will be desirable to avoid the user to wait every time the ajuda link is clicked. 
+- Each endpoint takes 10 seconds to response, so it will be desirable to avoid the user to wait for this 10 seconds every time the ajuda link is clicked. 
 - The requests can return a 500 http status, in this case you will have to display the message error provided in the response
 
 ## Development
