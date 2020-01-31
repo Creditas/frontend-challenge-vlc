@@ -1,6 +1,6 @@
 const helpService = {
-  getQuestion: () => ({ text: 'Question: blah?' }),
-  getAnswer: () => ({ text: 'Answer: yep, blah.' })
+  getQuestion: () => ({ text: 'Question: Can you help me?' }),
+  getAnswer: () => ({ text: 'Answer: Yes sure.' })
 }
 
 module.exports = helpService
