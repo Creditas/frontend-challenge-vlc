@@ -12,7 +12,7 @@ const registerEndpoints = (app) => {
     setTimeout(() => {
       if (shouldFail()) {
         res.status(500).send({
-          message: 'This is an error!'
+          message: 'Something goes wrong, please try again!'
         })
       } else {
         res.send(helpService.getQuestion())
