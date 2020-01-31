@@ -41,10 +41,10 @@ It should also follow the calculation rules bellow:
 const totalPayable = ((FTT / 100) + (interestRate / 100) + (numberOfInstallments / 1000) + 1) * loanAmount
 ```
 
-*Monthly payment calculation*
+*Monthly installment calculation*
 
 ```javascript
-const monthlyPayment = totalPayable / numberOfInstallments
+const monthlyInstallment = totalPayable / numberOfInstallments
 ```
 
 ## Challenges to achieve
