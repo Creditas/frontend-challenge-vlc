@@ -118,7 +118,12 @@ To run the tests you must execute the following command:
 npm test
 ```
 
-## Feedback (optional)
+## Deliverying the challenge
 
-As we said earlier, here at Creditas constructive feedbacks are part of our culture, so it would be very rewarding if you could contribute with our hiring process by giving us your [https://docs.google.com/forms/d/e/1FAIpQLSdwjudz38JMtMYf3rFBrMHX3XMy2J5oBLPnjBGD1QKvOM2SGg/viewform](opinion) on the challenge.
-We would like you to send it even if you didn't finish the challenge.
+- Please fork our repository to your GitHub account.
+- Once you are happy with your solution, upload it and grant access to **@Creditas/valencia-frontend**.
+- We will download your code, thoroughly go through it and come back with feedback within a few days.
+- In the meantime, please give us your sincere (no sugar coating!) [https://docs.google.com/forms/d/e/1FAIpQLSdwjudz38JMtMYf3rFBrMHX3XMy2J5oBLPnjBGD1QKvOM2SGg/viewform](opinion) on the challenge.
+We would like you to send it **even if you didn't finish the challenge**. Here at Creditas, constructive feedbacks are part of our culture.
+
+Thanks for your time and interest in joining us!!
