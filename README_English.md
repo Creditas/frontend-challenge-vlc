@@ -77,9 +77,9 @@ Please find the corresponding values below:
 
 Finally, you must update the monthly payment value whenever changes in the form's inputs are done.
 
-* **Display the ajuda text** 
+* **Display the help text** 
 
-To display the ajuda text we provide two endpoints :
+To display the help text, we provide two endpoints on localhost:4000 ( for more details you can check server.js file ):
 - 'api/question' which responses is 
 ```
 { text: 'Question: Can you help me?' }
@@ -89,12 +89,12 @@ To display the ajuda text we provide two endpoints :
 { text: 'Answer: Yes sure.' }
 ```
 
-When the user clicks the ajuda link, we need to display an alert with the following text:
+When the user clicks the help link, we need to display an alert with the following text:
 
 *Question: Can you help me?.</br>Answer: Yes, sure*
 
 You will have to consider the following:
-- Each endpoint takes 10 seconds to response, so it will be desirable to avoid the user to wait for this 10 seconds every time the ajuda link is clicked. 
+- Each endpoint takes 10 seconds to respond, so it will be desirable to avoid the user to wait for this 10 seconds every time the help link is clicked. 
 - The requests can return a 500 http status, in this case you will have to display the message error provided in the response
 
 ## Development
