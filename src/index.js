@@ -14,13 +14,13 @@ export const toStringFormValues = values => {
   const match = matchString => value => value.field === matchString
   const IOF = 6.38 / 100
   const INTEREST_RATE = 2.34 / 100
-  const TIME = values.find(match('installments')).value / 1000
+  const NUMBER_OF_INSTALLMENTS = values.find(match('installments')).value / 1000
   const VEHICLE_LOAN_AMOUNT = values.find(match('loan-amount')).value
 
   return `OUTPUT\n${values
     .map(value => `${value.field} --> ${value.value}`)
     .join('\n')}`.concat(
-      `\nTotal ${(IOF + INTEREST_RATE + TIME + 1) * VEHICLE_LOAN_AMOUNT}`
+      `\nTotal ${(IOF + INTEREST_RATE + NUMBER_OF_INSTALLMENTS + 1) * VEHICLE_LOAN_AMOUNT}`
     )
 }
 
