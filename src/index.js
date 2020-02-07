@@ -45,7 +45,7 @@ export function Submit(formElement) {
   })
 }
 
-export function Ajuda(element) {
+export function Help(element) {
   element.addEventListener('click', function (event) {
     alert('Display here the help text')
   })
@@ -80,7 +80,7 @@ export default class CreditasChallenge {
 
   static registerEvents() {
     Submit(document.querySelector('.form'))
-    Ajuda(document.getElementById('ajuda'))
+    Help(document.getElementById('help'))
 
     handleChangeRangeVehicleUnderWarranty(
       document.getElementById('valor-garantia-range'),
