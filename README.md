@@ -33,7 +33,7 @@ It should also follow the calculation rules bellow:
 **Common Rules**
 - Financial Transaction Tax (FTT): 6.38%;
 - Interest Rate: 2.34%;
-- Maximum loan-to-value (maximum amount the user can borrow): 80% of the product's value;
+- Maximum loan amount (maximum amount the user can borrow): 80% of the collateral's value;
 
 *Total payable calculation*
 
