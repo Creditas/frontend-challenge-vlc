@@ -45,6 +45,12 @@ export function Submit(formElement) {
   })
 }
 
+export function Help(element) {
+  element.addEventListener('click', function (event) {
+    alert('Display here the help text')
+  })
+}
+
 export function handleChangeRangeVehicleUnderWarranty(
   warrantyRangeElement,
   vehicleWarrantyElement
@@ -74,6 +80,7 @@ export default class CreditasChallenge {
 
   static registerEvents() {
     Submit(document.querySelector('.form'))
+    Help(document.getElementById('help'))
 
     handleChangeRangeVehicleUnderWarranty(
       document.getElementById('collateral-value-range'),
