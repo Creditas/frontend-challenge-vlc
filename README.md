@@ -83,7 +83,7 @@ Você precisa minimamente do [NodeJs](https://nodejs.org/en/) instalado para rod
 Você precisa conhecer um pouco sobre o Git, que é uma ferramenta que nos ajuda a fazer o controle de versão dos nossos arquivos.
 
 ```shell
-git clone https://github.com/Creditas/challenge.git
+git clone https://github.com/Creditas/frontend-challenge-vlc.git
 cd frontend/
 npm install
 npm start

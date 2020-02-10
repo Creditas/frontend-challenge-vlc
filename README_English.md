@@ -93,7 +93,7 @@ By executing the following lines of code in your terminal you will be able to:
 - Run the application.
 
 ```shell
-git clone https://github.com/Creditas/challenge.git
+git clone https://github.com/Creditas/frontend-challenge-vlc.git
 cd frontend/
 npm install
 npm start
