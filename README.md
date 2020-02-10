@@ -3,7 +3,7 @@
 # Frontend Challenge - Creditas
 
 This is a challenge designed to measure the candidate's expertise.
-We would like to clarify that we don't expect everyone to be able to finish the whole challenge, since it has been designed to cover the several degrees of expertise, from junior to senior.
+We would like to clarify that we don't expect everyone to be able to finish the whole challenge, since it has been designed to cover several degrees of expertise, from junior to senior.
 Nevertheless, we expect anyone interested in becoming a tripulante in Creditas to give it a try.
 
 In this challenge, we focus both on code design and design patterns in JavaScript. The goal is to assess your experience in writing **code that is easy to maintain, loosely coupled and highly cohesive**.
@@ -12,19 +12,20 @@ At Creditas we always work giving constructive feedback, therefore we will alway
 
 ## The challenge
 
-You have to improve the loan simulation calculator implemented in this project.
+You have to improve the loan simulator implemented in this project.
 
-Both the interface as well as the styles are provided. The challenges include refactoring the code and implemetning new functionalities (listed below).
+Both the interface as well as the styles are provided. The challenges include refactoring the code and implementing new functionalities (listed below).
 
-Feel free to componentize whatever you think should be componentized. Our only request is that you use only pure JavaScript, our beloved Vanilla. Do you accept the challenge?
+Feel free to componetize whatever you think should be componetized. Our only request is that you use only pure JavaScript, our beloved Vanilla. Do you accept the challenge?
 
-The calculator's current state:
-<img style="display: block; margin: 0 auto;" src="./layout.png">
+This is the simulator current state:
+
+<img style="display: block; margin: 0 auto;" src="./layout_en.png">
 
 
 ### Expected functionalities
 
-The application must allow the user to choose the collateral type they want to use in their equity loan simulation:
+The application must allow the user to choose the asset to be used as collateral:
 ***"Auto"*** or ***"Home"*** (the default option is ***"Auto"*** ).
 
 It should also follow the calculation rules bellow:
@@ -32,18 +33,18 @@ It should also follow the calculation rules bellow:
 **Common Rules**
 - Financial Transaction Tax (FTT): 6.38%;
 - Interest Rate: 2.34%;
-- Maximum loan-to-value (amount the user can borrow): 80% of the collateral's value;
+- Maximum loan amount (maximum amount the user can borrow): 80% of the collateral's value;
 
-*Total Loan Amount Formula*
+*Total payable calculation*
 
 ```javascript
-const totalLoanAmount = ((FTT / 100) + (interestRate / 100) + (termInMonths / 1000) + 1) * loanAmount
+const totalPayable = ((FTT / 100) + (interestRate / 100) + (numberOfInstallments / 1000) + 1) * loanAmount
 ```
 
-*Monthly payment formula*
+*Monthly installment calculation*
 
 ```javascript
-const monthlyPayment = totalLoanAmount / termInMonths
+const monthlyInstallment = totalPayable / numberOfInstallments
 ```
 
 ## Challenges to achieve
@@ -58,24 +59,24 @@ Currently, the project's CSS file has too many styles, making readability diffic
 * **Refactor the old code (and arrange the new one) to make maintainance easier** 
 
 Currently, Creditas offers two products: home equity loan and auto equity loan. This project implements the *"auto equity"* option only, **you must implement the *"home equity"* option**.
-By changing the collateral type in the `select` element, the user must see the amount and term options corresponding to the product chosen. That is, when selecting either _"Home"_ or _"Auto"_, you must show the correspondent values for each option on the form fields and on the slider.
+By changing the collateral in the `select` element, the user must see the amount and installment options corresponding to the asset chosen. That is, when selecting either _"Home"_ or _"Auto"_, you must show the correspondent values for each option on the form fields and on the slider.
 Please find the corresponding values below:
 
 **Auto**
 - Minimum loan amount: R$ 3.000,00;
 - Maximum loan amount: R$ 100.000,00;
-- Terms: 24 / 36 / 48 months
-- Minimum guarantee amount: R$ 5.000,00;
-- Maximum guarantee amount: R$ 3.000.000,00;
+- Number of installments: 24 / 36 / 48 months
+- Collateral minimum value: R$ 5.000,00;
+- Collateral maximum value: R$ 3.000.000,00;
 
 **Home**
 - Minimum loan amount: R$ 30.000,00;
 - Maximum loan amount: R$ 4.500.000,00;
-- Terms: 120 / 180 / 240 months
-- Minimum guarantee amount: R$ 50.000,00;
-- Maximum guarantee amount: R$ 100.000.000,00;
+- Number of installments: 120 / 180 / 240 months
+- Collateral minimum value: R$ 50.000,00;
+- Collateral maximum value: R$ 100.000.000,00;
 
-Finally, you must update the monthly payment value whenever changes in the form's inputs are done.
+Finally, you must update the monthly payment value whenever any input changes.
 
 ### Layout
 The template requires some minor css changes in order to be displayed as proposed in the references provided. Feel free to use any property you feel like to achieve so.
@@ -85,7 +86,6 @@ Desktop version:
 
 Mobile version:
 ![Mobile version](./mobile-layout.png)
-
 
 ## Development
 
@@ -103,7 +103,7 @@ By executing the following lines of code in your terminal you will be able to:
 - Run the application.
 
 ```shell
-git clone https://github.com/Creditas/challenge.git
+git clone https://github.com/Creditas/frontend-challenge-vlc.git
 cd frontend/
 npm install
 npm start
@@ -127,7 +127,12 @@ To run the tests you must execute the following command:
 npm test
 ```
 
-## Feedback (optional)
+## Delivering the challenge
 
-As we said earlier, here at Creditas constructive feedbacks are part of our culture, so it would be very rewarding if you could contribute with our hiring process by giving us your [https://docs.google.com/forms/d/e/1FAIpQLSdwjudz38JMtMYf3rFBrMHX3XMy2J5oBLPnjBGD1QKvOM2SGg/viewform](opinion) on the challenge.
-We would like you to send it even if you didn't finish the challenge.
+- Please fork our repository to your GitHub account.
+- Once you are happy with your solution, upload it and grant access to **@Creditas/valencia-frontend**.
+- We will download your code, thoroughly go through it and come back with feedback within a few days.
+- In the meantime, please give us your sincere (no sugar coating!) [https://docs.google.com/forms/d/e/1FAIpQLSdwjudz38JMtMYf3rFBrMHX3XMy2J5oBLPnjBGD1QKvOM2SGg/viewform](opinion) on the challenge.
+We would like you to send it **even if you didn't finish the challenge**. Here at Creditas, constructive feedbacks are part of our culture.
+
+Thanks for your time and interest in joining us!!
