@@ -83,9 +83,7 @@ body {
 }
 
 .field {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: inherit;
 }
 
 .field-group .field:first-child {
@@ -126,8 +124,7 @@ body {
 }
 
 .range__values {
-  display: flex;
-  justify-content: space-between;
+  display: inherit;
 }
 
 .range__values span {
