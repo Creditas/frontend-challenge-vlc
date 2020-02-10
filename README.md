@@ -16,7 +16,7 @@ You have to improve the loan simulator implemented in this project.
 
 Both the interface as well as the styles are provided. The challenges include refactoring the code and implementing new functionalities (listed below).
 
-Feel free to componentize whatever you think should be componentized. Our only request is that you use only pure JavaScript, our beloved Vanilla. Do you accept the challenge?
+Feel free to componetize whatever you think should be componetized. Our only request is that you use only pure JavaScript, our beloved Vanilla. Do you accept the challenge?
 
 This is the simulator current state:
 
@@ -77,6 +77,15 @@ Please find the corresponding values below:
 - Collateral maximum value: R$ 100.000.000,00;
 
 Finally, you must update the monthly payment value whenever any input changes.
+
+### Layout
+The template requires some minor css changes in order to be displayed as proposed in the references provided. Feel free to use any property you feel like to achieve so.
+
+Desktop version:
+![Desktop version](./desktop-layout.png)
+
+Mobile version:
+![Mobile version](./mobile-layout.png)
 
 ## Development
 
