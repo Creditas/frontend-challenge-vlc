@@ -118,7 +118,7 @@ To run the tests you must execute the following command:
 npm test
 ```
 
-## Deliverying the challenge
+## Delivering the challenge
 
 - Please fork our repository to your GitHub account.
 - Once you are happy with your solution, upload it and grant access to **@Creditas/valencia-frontend**.
