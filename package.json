@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+git@github.com:Creditas/challenge.git"
+    "url": "git+git@github.com:Creditas/frontend-challenge-vlc.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Creditas/challenge/issues"
+    "url": "https://github.com/Creditas/frontend-challenge-vlc/issues"
   },
-  "homepage": "https://github.com/Creditas/challenge/tree/master/frontend",
+  "homepage": "https://github.com/Creditas/frontend-challenge-vlc",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.3",
