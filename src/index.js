@@ -62,16 +62,11 @@ export function handleChangeRangeVehicleUnderWarranty (
   vehicleWarrantyElement
 ) {
   const MIN_VALUE = 5000.0
-  const MAX_VALUE = 3000000.00
+  const MAX_VALUE = 3000000.0
 
   warrantyRangeElement.addEventListener('change', function (event) {
-    vehicleWarrantyElement.value = Math.round(Number(event.target.value) * (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE
+    vehicleWarrantyElement.value = Math.floor(Number(event.target.value) * (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE
   })
-
-  if (document.getElementById('collateral').selected === 'home') {
-    document.getElementById('min-collateral').innerHTML = 80000.0
-    document.getElementById('max-collateral').innerHTML = 4500000.0
-  }
 }
 
 export function handleChangeVehicleLoanAmount (
@@ -84,10 +79,41 @@ export function handleChangeVehicleLoanAmount (
   loanAmountRangeElement.addEventListener('change', function (event) {
     loanAmountElement.value = Math.round(Number(event.target.value) * (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE
   })
-  if (document.getElementById('collateral').selected === 'home') {
-    document.getElementById('min-loan').innerHTML = 50000.0
-    document.getElementById('max-loan').innerHTML = 100000000.0
+}
+
+// FIX: Values are nor rendering the event when the option it's choosen.
+// Try the commented alert to see have a look of the values of the screen changing valueOption.
+// FIX: The range MAX_VALUE is not riching to the limit.
+export function handleChangeOption (
+  warrantyRangeElement,
+  vehicleWarrantyElement,
+  loanAmountRangeElement,
+  loanAmountElement
+) {
+  const MIN_VALUE_WARRANTY = 50000.0
+  const MAX_VALUE_WARRANTY = 1000000000.0
+
+  const MIN_VALUE_LOAN = 30000.0
+  const MAX_VALUE_LOAN = 4500000.0
+
+  let valueOption = document.getElementById('collateral').value
+
+  if (valueOption === 'home') {
+    warrantyRangeElement.addEventListener('change', function (event) {
+      vehicleWarrantyElement.value = Math.floor(Number(event.target.value) * (MAX_VALUE_WARRANTY - MIN_VALUE_WARRANTY + 1)) + MIN_VALUE_WARRANTY
+    })
+
+    loanAmountRangeElement.addEventListener('change', function (event) {
+      loanAmountElement.value = Math.round(Number(event.target.value) * (MAX_VALUE_LOAN - MIN_VALUE_LOAN + 1)) + MIN_VALUE_LOAN
+    })
+
+    // document.getElementById('home').selected = false
+    document.getElementById('min-collateral').innerHTML = 50000.0
+    document.getElementById('max-collateral').innerHTML = 1000000000.0
+    document.getElementById('min-loan').innerHTML = 30000.0
+    document.getElementById('max-loan').innerHTML = 4500000.0
   }
+  alert('Watch screen before and after it charges: ' + valueOption)
 }
 
 export default class CreditasChallenge {
@@ -108,9 +134,30 @@ export default class CreditasChallenge {
       document.getElementById('loan-amount-range'),
       document.getElementById('loan-amount')
     )
+
+    handleChangeOption(
+      document.getElementById('collateral-value-range'),
+      document.getElementById('collateral-value'),
+
+      document.getElementById('loan-amount-range'),
+      document.getElementById('loan-amount')
+    )
   }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
   CreditasChallenge.initialize()
 })
+
+// CREADO //
+export function handleChangeHomeLoanAmount (
+  loanAmountRangeElement,
+  loanAmountElement
+) {
+  const MIN_VALUE = 3000.0
+  const MAX_VALUE = 100000.0
+
+  loanAmountRangeElement.addEventListener('change', function (event) {
+    loanAmountElement.value = Math.round(Number(event.target.value) * (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE
+  })
+}
