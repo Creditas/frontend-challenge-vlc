@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import './styles.css'
 
 export const checkFormValidity = formElement => formElement.checkValidity()
@@ -107,7 +108,6 @@ export function handleChangeOption (
       loanAmountElement.value = Math.round(Number(event.target.value) * (MAX_VALUE_LOAN - MIN_VALUE_LOAN + 1)) + MIN_VALUE_LOAN
     })
 
-    // document.getElementById('home').selected = false
     document.getElementById('min-collateral').innerHTML = 50000.0
     document.getElementById('max-collateral').innerHTML = 1000000000.0
     document.getElementById('min-loan').innerHTML = 30000.0
