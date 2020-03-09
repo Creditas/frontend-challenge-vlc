@@ -82,8 +82,8 @@ export function handleChangeVehicleLoanAmount (
   })
 }
 
-// FIX: Values are nor rendering the event when the option it's choosen.
-// Try the commented alert to see have a look of the values of the screen changing valueOption.
+// FIX: Values are nor rendering the event when the option it's selected. ReactDOM.render
+// Try to apply required in one of the options to understand the behaviour
 // FIX: The range MAX_VALUE is not riching to the limit.
 export function handleChangeOption (
   warrantyRangeElement,
@@ -113,7 +113,24 @@ export function handleChangeOption (
     document.getElementById('min-loan').innerHTML = 30000.0
     document.getElementById('max-loan').innerHTML = 4500000.0
   }
-  alert('Watch screen before and after it charges: ' + valueOption)
+  // alert('Initial screen values: ' + valueOption)
+}
+
+// FIX: Needs to be fixed.
+export function handleInstallment (
+  monthlyInstallmentElement,
+  totalPayable
+) {
+  const FTT = 6.38
+  const interestRate = 2.34
+  const loanAmount = 80
+
+  let numberOfInstallments = document.getElementById('installments').value
+
+  monthlyInstallmentElement.addEventListener('change', function (event) {
+    totalPayable = ((FTT / 100) + (interestRate / 100) + (numberOfInstallments / 1000) + 1) * loanAmount
+    monthlyInstallment = totalPayable / numberOfInstallments
+  })
 }
 
 export default class CreditasChallenge {
@@ -142,22 +159,14 @@ export default class CreditasChallenge {
       document.getElementById('loan-amount-range'),
       document.getElementById('loan-amount')
     )
+
+    handleInstallment(
+      document.getElementById('"monthlyInstallment'),
+      document.getElementById('totalPayable')
+    )
   }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
   CreditasChallenge.initialize()
 })
-
-// CREADO //
-export function handleChangeHomeLoanAmount (
-  loanAmountRangeElement,
-  loanAmountElement
-) {
-  const MIN_VALUE = 3000.0
-  const MAX_VALUE = 100000.0
-
-  loanAmountRangeElement.addEventListener('change', function (event) {
-    loanAmountElement.value = Math.round(Number(event.target.value) * (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE
-  })
-}
