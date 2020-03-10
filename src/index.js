@@ -83,7 +83,7 @@ export function handleChangeVehicleLoanAmount (
 }
 
 // FIX: Values are nor rendering the event when the option it's selected. ReactDOM.render
-// Try to apply required in one of the options to understand the behaviour
+// Try to apply in HTML the required in one of the 2 options to understand the behaviour
 // FIX: The range MAX_VALUE is not riching to the limit.
 export function handleChangeOption (
   warrantyRangeElement,
@@ -116,7 +116,7 @@ export function handleChangeOption (
   // alert('Initial screen values: ' + valueOption)
 }
 
-// FIX: Needs to be fixed.
+// TODO: Needs to be fixed.
 export function handleInstallment (
   monthlyInstallmentElement,
   totalPayable
