@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import './styles.css'
 
 export const checkFormValidity = formElement => formElement.checkValidity()
@@ -10,6 +11,9 @@ export const getFormValues = formElement =>
       value: element.value
     }))
 
+export const confirm = formElement => formElement.checkValidity(true)
+export const Alert = formElement => formElement.checkValidity()
+
 export const toStringFormValues = values => {
   const match = matchString => value => value.field === matchString
   const IOF = 6.38 / 100
@@ -20,11 +24,11 @@ export const toStringFormValues = values => {
   return `OUTPUT\n${values
     .map(value => `${value.field} --> ${value.value}`)
     .join('\n')}`.concat(
-      `\nTotal ${(IOF + INTEREST_RATE + NUMBER_OF_INSTALLMENTS + 1) * VEHICLE_LOAN_AMOUNT}`
-    )
+    `\nTotal ${(IOF + INTEREST_RATE + NUMBER_OF_INSTALLMENTS + 1) * VEHICLE_LOAN_AMOUNT}`
+  )
 }
 
-export function Send(values) {
+export function Send (values) {
   return new Promise((resolve, reject) => {
     try {
       resolve(toStringFormValues(values))
@@ -34,7 +38,7 @@ export function Send(values) {
   })
 }
 
-export function Submit(formElement) {
+export function Submit (formElement) {
   formElement.addEventListener('submit', function (event) {
     event.preventDefault()
     if (checkFormValidity(formElement)) {
@@ -45,40 +49,96 @@ export function Submit(formElement) {
   })
 }
 
-export function Help(element) {
+export function Help (element) {
   element.addEventListener('click', function (event) {
-    alert('Display here the help text')
+    alert('Can you help me?')
+    setTimeout(function () {
+      alert('Yes, sure')
+    }, 10000)
   })
 }
 
-export function handleChangeRangeVehicleUnderWarranty(
+export function handleChangeRangeVehicleUnderWarranty (
   warrantyRangeElement,
   vehicleWarrantyElement
 ) {
-  const MIN_VALUE = 12000.0
+  const MIN_VALUE = 5000.0
+  const MAX_VALUE = 3000000.0
+
   warrantyRangeElement.addEventListener('change', function (event) {
-    vehicleWarrantyElement.value =
-      (Number(MIN_VALUE) * Number(event.target.value)) / 100 + Number(MIN_VALUE)
+    vehicleWarrantyElement.value = Math.floor(Number(event.target.value) * (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE
   })
 }
 
-export function handleChangeVehicleLoanAmount(
+export function handleChangeVehicleLoanAmount (
   loanAmountRangeElement,
   loanAmountElement
 ) {
-  const MIN_VALUE = 30000.0
+  const MIN_VALUE = 3000.0
+  const MAX_VALUE = 100000.0
+
   loanAmountRangeElement.addEventListener('change', function (event) {
-    loanAmountElement.value =
-      (Number(MIN_VALUE) * Number(event.target.value)) / 100 + Number(MIN_VALUE)
+    loanAmountElement.value = Math.round(Number(event.target.value) * (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE
+  })
+}
+
+// FIX: Values are nor rendering the event when the option it's selected. ReactDOM.render
+// Try to apply in HTML the required in one of the 2 options to understand the behaviour
+// FIX: The range MAX_VALUE is not riching to the limit.
+export function handleChangeOption (
+  warrantyRangeElement,
+  vehicleWarrantyElement,
+  loanAmountRangeElement,
+  loanAmountElement
+) {
+  const MIN_VALUE_WARRANTY = 50000.0
+  const MAX_VALUE_WARRANTY = 1000000000.0
+
+  const MIN_VALUE_LOAN = 30000.0
+  const MAX_VALUE_LOAN = 4500000.0
+
+  let valueOption = document.getElementById('collateral').value
+
+  if (valueOption === 'home') {
+    warrantyRangeElement.addEventListener('change', function (event) {
+      vehicleWarrantyElement.value = Math.floor(Number(event.target.value) * (MAX_VALUE_WARRANTY - MIN_VALUE_WARRANTY + 1)) + MIN_VALUE_WARRANTY
+    })
+
+    loanAmountRangeElement.addEventListener('change', function (event) {
+      loanAmountElement.value = Math.round(Number(event.target.value) * (MAX_VALUE_LOAN - MIN_VALUE_LOAN + 1)) + MIN_VALUE_LOAN
+    })
+
+    document.getElementById('min-collateral').innerHTML = 50000.0
+    document.getElementById('max-collateral').innerHTML = 1000000000.0
+    document.getElementById('min-loan').innerHTML = 30000.0
+    document.getElementById('max-loan').innerHTML = 4500000.0
+  }
+  // alert('Initial screen values: ' + valueOption)
+}
+
+// TODO: Needs to be fixed.
+export function handleInstallment (
+  monthlyInstallmentElement,
+  totalPayable
+) {
+  const FTT = 6.38
+  const interestRate = 2.34
+  const loanAmount = 80
+
+  let numberOfInstallments = document.getElementById('installments').value
+
+  monthlyInstallmentElement.addEventListener('change', function (event) {
+    totalPayable = ((FTT / 100) + (interestRate / 100) + (numberOfInstallments / 1000) + 1) * loanAmount
+    monthlyInstallment = totalPayable / numberOfInstallments
   })
 }
 
 export default class CreditasChallenge {
-  static initialize() {
+  static initialize () {
     this.registerEvents()
   }
 
-  static registerEvents() {
+  static registerEvents () {
     Submit(document.querySelector('.form'))
     Help(document.getElementById('help'))
 
@@ -90,6 +150,19 @@ export default class CreditasChallenge {
     handleChangeVehicleLoanAmount(
       document.getElementById('loan-amount-range'),
       document.getElementById('loan-amount')
+    )
+
+    handleChangeOption(
+      document.getElementById('collateral-value-range'),
+      document.getElementById('collateral-value'),
+
+      document.getElementById('loan-amount-range'),
+      document.getElementById('loan-amount')
+    )
+
+    handleInstallment(
+      document.getElementById('"monthlyInstallment'),
+      document.getElementById('totalPayable')
     )
   }
 }

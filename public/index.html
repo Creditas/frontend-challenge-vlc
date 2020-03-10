@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -34,8 +35,9 @@
                 </div>
                 <div class="field">
                   <label for="collateral">Collateral</label>
-                  <select name="collateral" id="collateral" required>
-                    <option value="vehicle">Vehicle</option>
+                  <select name="collateral" id="collateral" required >
+                    <option id="vehicle" name="vehicle" value="vehicle" selected>Vehicle</option>
+                    <option id="home" name="home" value="home">Home</option>
                   </select>
                 </div>
               </div>
@@ -49,8 +51,8 @@
                     <div class="range">
                       <input type="range" name="collateral-value-range" id="collateral-value-range" min="0" max="100" value="20" step="10">
                       <div class="range__values">
-                        <span>12.000</span>
-                        <span>24.000</span>
+                        <span id="min-collateral">5.000</span>
+                        <span id="max-collateral">3.000.000</span>
                       </div>
                     </div>
                   </div>
@@ -66,8 +68,8 @@
                     <div class="range">
                       <input type="range" name="loan-amount-range" id="loan-amount-range" min="0" max="100" value="90" step="10">
                       <div class="range__values">
-                        <span>30.000</span>
-                        <span>60.000</span>
+                        <span id="min-loan">3.000</span>
+                        <span id="max-loan">100.000</span>
                       </div>
                     </div>
                   </div>
@@ -79,12 +81,12 @@
                 <h4>Monthly installment</h4>
                 <div class="quota">
                   <strong>R$</strong>
-                  <span>465,00</span>
+                  <span id="monthlyInstallment">465,00</span>
                 </div>
               </div>
               <div class="amount_container">
                 <h4>Total payable</h4>
-                <p>R$ 11.112,00</p>
+                <p id='totalPayable'>R$ 11.112,00</p>
               </div>
               <div class="tax__container">
                 <h4>Interest rate (month)</h4>
@@ -96,7 +98,7 @@
             </div>
           </form>
         </section>
-        <footer class="footer">*Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quas non harum dolor eligendi id, ab corrupti blanditiis suscipit ex odit error alias minus. Enim dolores eum officiis quae rem!*</footer>
+        <footer>*Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quas non harum dolor eligendi id, ab corrupti blanditiis suscipit ex odit error alias minus. Enim dolores eum officiis quae rem!*</footer>
       </main>
     </div>
   </body>

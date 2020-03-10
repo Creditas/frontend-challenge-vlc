@@ -12,6 +12,7 @@
   --tom-thumb: #2a492f;
 }
 
+
 * {
   margin: 0;
   padding: 0;
@@ -83,7 +84,7 @@ body {
 }
 
 .field {
-  display: inherit;
+ display: inline-block;
 }
 
 .field-group .field:first-child {
@@ -112,19 +113,20 @@ body {
   border-radius: 4px;
   padding: 10px 5px;
   width: 150px;
+  margin-right: 1em;
 }
 
 .form__fields {
   max-width: 400px;
-  min-width: 400px;
 }
 
 .range {
-  transform: translateY(11px);
+  transform: translateX(-30px) translateY(20px);
 }
 
 .range__values {
-  display: inherit;
+  display: flex;
+  margin-top: 5px;
 }
 
 .range__values span {
@@ -132,11 +134,36 @@ body {
   font-weight: 100;
 }
 
-.field input[type="range"] {
-  transform: translateY(5px);
+span:nth-of-type(1){
+  margin-right: 4rem;
 }
 
-.footer {
+.field input[type="range"] {
+  transform: translateY(5px);
+  -webkit-appearance: none;
+  height:5px;
+  width:100%;
+  background: linear-gradient(#616161, #b7b7b7, #ccc);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #777;
+  background: linear-gradient(#fff, #ccc);
+  height: 14px;
+  width: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 0px;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+footer {
   font-size: .6rem;
   font-weight: 100;
   max-width: 600px;
@@ -154,6 +181,7 @@ body {
   align-items: center;
   justify-content: space-around;
   min-width: 35%;
+  margin-left: 4rem;
 }
 
 .form__result h4 {
@@ -225,5 +253,6 @@ body {
   .form .form__result {
     width: 200px;
     height: 250px;
+    margin: 0em;
   }
 }
