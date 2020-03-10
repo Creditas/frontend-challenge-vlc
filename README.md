@@ -6,7 +6,7 @@ This is a challenge designed to measure the candidate's expertise.
 We would like to clarify that we don't expect everyone to be able to finish the whole challenge, since it has been designed to cover several degrees of expertise, from junior to senior.
 Nevertheless, we expect anyone interested in becoming a tripulante in Creditas to give it a try.
 
-In this challenge, we focus both on code design and design patterns in JavaScript. The goal is to assess your experience in writing **code that is easy to maintain, loosely coupled and highly cohesive**.
+In this challenge,cd we focus both on code design and design patterns in JavaScript. The goal is to assess your experience in writing **code that is easy to maintain, loosely coupled and highly cohesive**.
 
 At Creditas we always work giving constructive feedback, therefore we will always dedicate the outmost attention to every solution submitted; contacting you back with the positive aspects of your submission and what could be improved. Just for that it is worth trying! :)
 
@@ -30,10 +30,9 @@ The application must allow the user to choose the asset to be used as collateral
 
 It should also follow the calculation rules bellow:
 
-**Common Rules**
-- Financial Transaction Tax (FTT): 6.38%;
-- Interest Rate: 2.34%;
-- Maximum loan amount (maximum amount the user can borrow): 80% of the collateral's value;
+- Financial Transaction Tax (FTT): 6.38%
+- Interest Rate: 2.34%
+- Maximum loan amount (maximum amount the user can borrow) 80% of the collateral's value. This means that when you change the collateral value, **the maximum for the loan amount slider should be recalculated too**
 
 *Total payable calculation*
 
@@ -134,10 +133,10 @@ If everything is correct, you should be able to access the following URL: [http:
 ### Dependencies
 
 This project uses some libraries to assist us with tests and running the application. Those are: 
-- [https://webpack.js.org/](Webpack)
-- [https://babeljs.io/](Babel)
-- [https://jestjs.io/](Jest)
-- [https://eslint.org/](Eslint)
+- [Webpack](https://webpack.js.org/)
+- [Babel](https://babeljs.io/)
+- [Jest](https://jestjs.io/)
+- [Eslint)[https://eslint.org/]
 
 ## Tests
 
@@ -152,7 +151,7 @@ npm test
 - Please fork our repository to your GitHub account.
 - Once you are happy with your solution, upload it and grant access to **@Creditas/valencia-frontend**.
 - We will download your code, thoroughly go through it and come back with feedback within a few days.
-- In the meantime, please give us your sincere (no sugar coating!) [https://docs.google.com/forms/d/e/1FAIpQLSdwjudz38JMtMYf3rFBrMHX3XMy2J5oBLPnjBGD1QKvOM2SGg/viewform](opinion) on the challenge.
+- In the meantime, please give us your sincere (no sugar coating!) [opinion](https://docs.google.com/forms/d/e/1FAIpQLSdwjudz38JMtMYf3rFBrMHX3XMy2J5oBLPnjBGD1QKvOM2SGg/viewform) on the challenge.
 We would like you to send it **even if you didn't finish the challenge**. Here at Creditas, constructive feedbacks are part of our culture.
 
 Thanks for your time and interest in joining us!!
