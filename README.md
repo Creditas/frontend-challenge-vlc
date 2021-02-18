@@ -30,7 +30,43 @@ Here is where we need you !! .. can you help us to reduce this **tiempo de respu
 
 ### Endpoints
 
--- here the endpoints --
+- get /api/films
+
+  response:
+
+  ```javascript
+  films: [
+    {
+      id: "id",
+      img: "url/img1",
+      title: "title1",
+      genre: "genre1",
+      price: "price1",
+    },
+  ];
+  ```
+
+- get /api/snacks
+
+  response:
+
+  ```javascript
+  snacks: [
+    {
+      description: "description1",
+      price: "price1",
+    },
+  ];
+  ```
+
+- post /api/films/confirm
+- request
+
+```javascript
+{
+  id: "1";
+}
+```
 
 ### Layout
 
