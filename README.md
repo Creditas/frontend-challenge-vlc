@@ -32,7 +32,7 @@ Here is where we need you !! .. can you help us to reduce this **tiempo de respu
 
 - get /api/films
 
-  response:
+  response
 
   ```javascript
   films: [
@@ -60,25 +60,71 @@ Here is where we need you !! .. can you help us to reduce this **tiempo de respu
   ```
 
 - post /api/films/confirm
-- request
 
-```javascript
-{
-  id: "1";
-}
-```
+  request:
+
+  ```javascript
+  {
+    id: "1";
+  }
+  ```
+
+  response:
+
+  ```javascript
+  {
+    seatNumer: "1";
+  }
+  ```
+
+- post /api/snacks/confirm
+
+  request:
+
+  ```javascript
+  {
+    id: "1";
+  }
+  ```
+
+  response:
+
+  ```javascript
+  {
+    orderNum: "1";
+  }
+  ```
+
+- post /api/ticket
+
+  request
+
+  ```javascript
+  {
+    seatNumber: "1",
+    orderNum: "1"
+  }
+  ```
+
+  response
+
+  ```javascript
+  {
+    ticket;
+  }
+  ```
 
 ### Layout
 
 The template requires some css rules in order to be displayed as proposed in the screenshots provided. Feel free to use any property you feel like to achieve so.
 
-Desktop version:
+#### Desktop version
 
--- here the images --
+![Desktop version](./desktop-layout.png)
 
-Mobile version:
+#### Mobile version
 
--- here the images --
+![Mobile version](./mobile-layout.png)
 
 ## Development
 
