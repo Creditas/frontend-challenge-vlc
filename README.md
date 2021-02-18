@@ -110,7 +110,11 @@ Here is where we need you !! .. can you help us to reduce this **tiempo de respu
 
   ```javascript
   {
-    ticket;
+    filmName: 'name1',
+    seatNumber: '1',
+    snackName: 'name1',
+    totalPrice: 20,
+    currency: 'euros'
   }
   ```
 
