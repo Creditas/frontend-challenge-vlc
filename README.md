@@ -1,4 +1,4 @@
-<img src="https://www.creditas.com.br/static/images/logo-creditas-color-8367919c2a.svg" width="400">
+<img src="./logo-creditas.svg" width="400">
 
 # Frontend Challenge - Creditas
 
