@@ -48,7 +48,7 @@ Here is where we need you !! .. can you help us to reduce this **tiempo de respu
 
 - get /api/snacks
 
-  response:
+  response
 
   ```javascript
   snacks: [
@@ -61,7 +61,7 @@ Here is where we need you !! .. can you help us to reduce this **tiempo de respu
 
 - post /api/films/confirm
 
-  request:
+  request
 
   ```javascript
   {
@@ -69,7 +69,7 @@ Here is where we need you !! .. can you help us to reduce this **tiempo de respu
   }
   ```
 
-  response:
+  response
 
   ```javascript
   {
@@ -79,7 +79,7 @@ Here is where we need you !! .. can you help us to reduce this **tiempo de respu
 
 - post /api/snacks/confirm
 
-  request:
+  request
 
   ```javascript
   {
@@ -87,7 +87,7 @@ Here is where we need you !! .. can you help us to reduce this **tiempo de respu
   }
   ```
 
-  response:
+  response
 
   ```javascript
   {
