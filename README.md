@@ -1,6 +1,6 @@
 <img src="./logo-creditas.svg" width="400">
 
-# Frontend Challenge - Creditas
+# Frontend Challenge
 
 This is a challenge designed to measure the candidate's expertise.
 We would like to clarify that we don't expect everyone to be able to finish the whole challenge, since it has been designed to cover several degrees of expertise, from junior to senior.
