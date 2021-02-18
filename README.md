@@ -14,13 +14,13 @@ At Creditas we always work giving constructive feedback, therefore we will alway
 
 Cine Creditas it is getting bigger and bigger and needs to create a **sistema de reservas automatizado**
 
-In order to make a booking, users must select a **film** and a **complement** ( food, drink, etc ...).
+In order to make a booking, users must select a **film** and a **snack**.
 
-It is **important** to remark that our business model requires the user to select both elements ( a film and a complement )
+It is **important** to remark that our business model requires the user to select both elements ( a film and a snack )
 
 Once the user has selected both items, a ticket will be displayed describing user's choice.
 
-Your mission will be to build a web application where the user can see both a list of films and a list of complements and display the corresponding ticket.
+Your mission will be to build a web application where the user can see both a list of films and a list of snacks and display the corresponding ticket.
 
 Lastly, due to the traffic we are generating, we are averaging over 10 seconds to generate the ticket.
 
