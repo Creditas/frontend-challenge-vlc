@@ -12,19 +12,19 @@ At Creditas we always work giving constructive feedback, therefore we will alway
 
 ## The challenge
 
-Cine Creditas it is getting bigger and bigger and needs to create a **sistema de reservas automatizado**
+Cine Creditas it is getting bigger and bigger and needs to create a self-service booking system.
 
 In order to make a booking, users must select a **film** and a **snack**.
 
 It is **important** to remark that our business model requires the user to select both elements ( a film and a snack )
 
-Once the user has selected both items, a ticket will be displayed describing user's choice.
+Once the user has selected both items, they must confirm their selection and as a result a ticket will be displayed describing user's choice.
 
-Your mission will be to build a web application where the user can see both a list of films and a list of snacks and display the corresponding ticket.
+Your mission will be to build a web application where the user can see both a list of films and a list of snacks, have the possibility to confirm their selection and display the corresponding generated ticket.
 
-Lastly, due to the traffic we are generating, we are averaging over 10 seconds to generate the ticket.
+Right now due to the traffic we are generating, we are averaging over 10 seconds to generate the ticket.
 
-Here is where we need you !! .. can you help us to reduce this **tiempo de respuesta?**
+As part of the challenge we need your help in order to reduce this delay as much as possible.
 
 ## Resources
 
@@ -37,7 +37,7 @@ Here is where we need you !! .. can you help us to reduce this **tiempo de respu
   ```javascript
   films: [
     {
-      id: "id",
+      id: "1",
       img: "url/img1",
       title: "title1",
       genre: "genre1",
@@ -53,6 +53,7 @@ Here is where we need you !! .. can you help us to reduce this **tiempo de respu
   ```javascript
   snacks: [
     {
+      id: "1",
       description: "description1",
       price: "price1",
     },
@@ -73,7 +74,7 @@ Here is where we need you !! .. can you help us to reduce this **tiempo de respu
 
   ```javascript
   {
-    seatNumer: "1";
+    seatNumber: "1";
   }
   ```
 
@@ -91,30 +92,7 @@ Here is where we need you !! .. can you help us to reduce this **tiempo de respu
 
   ```javascript
   {
-    orderNum: "1";
-  }
-  ```
-
-- post /api/ticket
-
-  request
-
-  ```javascript
-  {
-    seatNumber: "1",
-    orderNum: "1"
-  }
-  ```
-
-  response
-
-  ```javascript
-  {
-    filmName: 'name1',
-    seatNumber: '1',
-    snackName: 'name1',
-    totalPrice: 20,
-    currency: 'euros'
+    orderNumber: "1";
   }
   ```
 
