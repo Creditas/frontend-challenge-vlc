@@ -12,7 +12,7 @@ At Creditas we always work giving constructive feedback, therefore we will alway
 
 ## The challenge
 
-Cine Creditas it is getting bigger and bigger and needs to create a self-service booking system.
+Cine Creditas is getting bigger and bigger and needs to create a self-service booking system.
 
 In order to make a booking, users must select a **film** and a **snack**.
 
@@ -92,7 +92,7 @@ As part of the challenge we need your help in order to reduce this delay as much
 
   ```javascript
   {
-    orderNumber: "1";
+    queueNumber: "1";
   }
   ```
 
