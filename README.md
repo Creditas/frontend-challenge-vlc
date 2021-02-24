@@ -30,43 +30,43 @@ As part of the challenge we need your help in order to reduce this delay as much
 
 ### Endpoints
 
-- get /api/films
+- get https://frontend-challenge-vlc-api.public.dev.creditas.io/api/films
 
   response
 
   ```javascript
   films: [
     {
-      id: "1",
-      img: "url/img1",
-      title: "title1",
-      genre: "genre1",
-      price: "price1",
+      id: string,
+      title: string,
+      genre: string,
+      price: string,
+      imageUrl: string
     },
   ];
   ```
 
-- get /api/snacks
+- get https://frontend-challenge-vlc-api.public.dev.creditas.io/api/snacks
 
   response
 
   ```javascript
   snacks: [
     {
-      id: "1",
-      description: "description1",
-      price: "price1",
+      id: string,
+      name: string,
+      price: number,
     },
   ];
   ```
 
-- post /api/films/confirm
+- post https://frontend-challenge-vlc-api.public.dev.creditas.io/api/films/confirm
 
   request
 
   ```javascript
   {
-    id: "1";
+    id: string;
   }
   ```
 
@@ -74,17 +74,17 @@ As part of the challenge we need your help in order to reduce this delay as much
 
   ```javascript
   {
-    seatNumber: "1";
+    seatNumber: string;
   }
   ```
 
-- post /api/snacks/confirm
+- post https://frontend-challenge-vlc-api.public.dev.creditas.io/api/snacks/confirm
 
   request
 
   ```javascript
   {
-    id: "1";
+    id: string;
   }
   ```
 
@@ -92,7 +92,7 @@ As part of the challenge we need your help in order to reduce this delay as much
 
   ```javascript
   {
-    queueNumber: "1";
+    queueNumber: string;
   }
   ```
 
