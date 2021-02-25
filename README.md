@@ -30,7 +30,7 @@ As part of the challenge we need your help in order to reduce this delay as much
 
 ### Endpoints
 
-- get https://frontend-challenge-vlc-api.public.dev.creditas.io/api/films
+- GET https://frontend-challenge-vlc-api.public.dev.creditas.io/api/films
 
   response
 
@@ -46,7 +46,7 @@ As part of the challenge we need your help in order to reduce this delay as much
   ];
   ```
 
-- get https://frontend-challenge-vlc-api.public.dev.creditas.io/api/snacks
+- GET https://frontend-challenge-vlc-api.public.dev.creditas.io/api/snacks
 
   response
 
@@ -60,7 +60,7 @@ As part of the challenge we need your help in order to reduce this delay as much
   ];
   ```
 
-- post https://frontend-challenge-vlc-api.public.dev.creditas.io/api/films/confirm
+- POST https://frontend-challenge-vlc-api.public.dev.creditas.io/api/films/confirm
 
   request
 
@@ -78,7 +78,7 @@ As part of the challenge we need your help in order to reduce this delay as much
   }
   ```
 
-- post https://frontend-challenge-vlc-api.public.dev.creditas.io/api/snacks/confirm
+- POST https://frontend-challenge-vlc-api.public.dev.creditas.io/api/snacks/confirm
 
   request
 
