@@ -35,15 +35,17 @@ As part of the challenge we need your help in order to reduce this delay as much
   response
 
   ```javascript
-  films: [
-    {
-      id: string,
-      title: string,
-      genre: string,
-      price: string,
-      imageUrl: string
-    },
-  ];
+  {
+    films: [
+      {
+        id: string,
+        title: string,
+        genre: string,
+        price: string,
+        imageUrl: string
+      }
+    ]
+  }
   ```
 
 - GET https://frontend-challenge-vlc-api.public.dev.creditas.io/api/snacks
@@ -51,13 +53,15 @@ As part of the challenge we need your help in order to reduce this delay as much
   response
 
   ```javascript
-  snacks: [
-    {
-      id: string,
-      name: string,
-      price: number,
-    },
-  ];
+  {
+    snacks: [
+      {
+        id: string,
+        name: string,
+        price: number,
+      }
+    ]
+  }
   ```
 
 - POST https://frontend-challenge-vlc-api.public.dev.creditas.io/api/films/confirm
