@@ -78,7 +78,7 @@ As part of the challenge we need your help in order to reduce this delay as much
 
   ```javascript
   {
-    seatNumber: string;
+    seatNumber: number;
   }
   ```
 
@@ -96,7 +96,7 @@ As part of the challenge we need your help in order to reduce this delay as much
 
   ```javascript
   {
-    queueNumber: string;
+    queueNumber: number;
   }
   ```
 
