@@ -7,6 +7,7 @@ This is a challenge designed to measure the candidate's expertise.
 In this challenge,we focus both on code design and design patterns in JavaScript.
 
 At Creditas we always work giving constructive feedback, therefore we will always dedicate the outmost attention to every solution submitted, contacting you back with the positive aspects of your submission and what could be improved.
+
 Just for that it is worth trying! :)
 
 ## The challenge
