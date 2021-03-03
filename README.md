@@ -157,7 +157,6 @@ Some other things that matter to us:
 - Please fork our repository to your GitHub account.
 - Once you are happy with your solution, upload it and grant access to **@Creditas/valencia-frontend**.
 - We will download your code, thoroughly go through it and come back with feedback within a few days.
-- In the meantime, please give us your sincere (no sugar coating!) [opinion](https://docs.google.com/forms/d/e/1FAIpQLSdwjudz38JMtMYf3rFBrMHX3XMy2J5oBLPnjBGD1QKvOM2SGg/viewform) on the challenge.
-  We would like you to send it **even if you didn't finish the challenge**. Here at Creditas, constructive feedbacks are part of our culture.
+- In the meantime, please give us your sincere (no sugar coating!) [opinion](https://docs.google.com/forms/d/e/1FAIpQLSdwjudz38JMtMYf3rFBrMHX3XMy2J5oBLPnjBGD1QKvOM2SGg/viewform) on the challenge. We would like you to receive it **even if you didn't finish the challenge**. Here at Creditas, constructive feedbacks are part of our culture.
 
 Thanks for your time and interest in joining us!!
