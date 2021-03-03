@@ -3,12 +3,11 @@
 # Frontend Challenge
 
 This is a challenge designed to measure the candidate's expertise.
-We would like to clarify that we don't expect everyone to be able to finish the whole challenge, since it has been designed to cover several degrees of expertise, from junior to senior.
-Nevertheless, we expect anyone interested in becoming a tripulante in Creditas to give it a try.
 
-In this challenge,cd we focus both on code design and design patterns in JavaScript. The goal is to assess your experience in writing **code that is easy to maintain, loosely coupled and highly cohesive**.
+In this challenge,we focus both on code design and design patterns in JavaScript.
 
-At Creditas we always work giving constructive feedback, therefore we will always dedicate the outmost attention to every solution submitted, contacting you back with the positive aspects of your submission and what could be improved. Just for that it is worth trying! :)
+At Creditas we always work giving constructive feedback, therefore we will always dedicate the outmost attention to every solution submitted, contacting you back with the positive aspects of your submission and what could be improved.
+Just for that it is worth trying! :)
 
 ## The challenge
 
@@ -42,9 +41,9 @@ As part of the challenge we need your help in order to reduce this delay as much
         title: string,
         genre: string,
         price: string,
-        imageUrl: string
-      }
-    ]
+        imageUrl: string,
+      },
+    ];
   }
   ```
 
@@ -59,8 +58,8 @@ As part of the challenge we need your help in order to reduce this delay as much
         id: string,
         name: string,
         price: number,
-      }
-    ]
+      },
+    ];
   }
   ```
 
@@ -118,7 +117,6 @@ The template requires some css rules in order to be displayed as proposed in the
 
 You will need to install on your machine:
 
-- [NodeJs](https://nodejs.org/en/) in order to run the application.
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) in order to clone the repository containing this challenge and submit the pull request with your solution.
 
 ### Configuration to run the environment
@@ -126,44 +124,22 @@ You will need to install on your machine:
 By executing the following lines of code in your terminal you will be able to:
 
 - Clone the repository containing this challenge.
-- Install the necessary dependencies to run the application.
-- Run the application.
 
 ```shell
 git clone https://github.com/Creditas/frontend-challenge-vlc.git
-cd frontend/
-npm install
-npm start
 ```
 
-If everything is correct, you should be able to access the following URL: [http://localhost:4000/](http://localhost:4000/).
+## Your solution
 
-### Dependencies
-
-This project uses some libraries to assist us with tests and running the application. Those are:
-
-- [Webpack](https://webpack.js.org/)
-- [Babel](https://babeljs.io/)
-- [Jest](https://jestjs.io/)
-- [Eslint)[https://eslint.org/]
-
-## Tests
-
-To run the tests you must execute the following command:
-
-```shell
-npm test
-```
-
-## Must have
+### Must have
 
 - README file containing instructions for the project setup along with the chosen stack
 
-## Extra points
+### Extra points
 
 - Extra explanation in your README file such as architectural overview, testing strategy, things to improve (next steps) etc
 
-## Stack
+### Stack
 
 - You are free to choose the stack and language that you feel comfortable with!
 
