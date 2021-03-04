@@ -4,25 +4,25 @@
 
 This is a challenge designed to measure the candidate's expertise.
 
-In this challenge,we focus both on code design and design patterns in JavaScript.
+In this challenge, we focus both on code design and design patterns in JavaScript.
 
-At Creditas we always work giving constructive feedback, therefore we will always dedicate the outmost attention to every solution submitted, contacting you back with the positive aspects of your submission and what could be improved.
+At Creditas, we value giving (and receiving) constructive feedback, therefore we will always dedicate the outmost attention to every solution submitted, contacting you back with the positive aspects of your submission and what could be improved.
 
-Just for that it is worth trying! :)
+Just for that, it is worth trying! :). We also ask you to help us to improve our hiring process, at the end of this file you will find a form allowing you to share your impressions with us
 
 ## The challenge
 
 Cine Creditas is getting bigger and bigger and needs to create a self-service booking system.
 
-In order to make a booking, users must select a **film** and a **snack**.
+In order to make a booking, our clients must select a **film** and a **snack**.
 
-It is **important** to remark that our business model requires the user to select both elements ( a film and a snack )
+It is **important** to remark that our business model requires the client to select both elements ( a film and a snack )
 
-Once the user has selected both items, they must confirm their selection and as a result a ticket will be displayed describing user's choice.
+Once the client has selected both items, they must confirm their selection and as a result, a ticket will be displayed describing the client's choice.
 
-Your mission will be to build a web application where the user can see both a list of films and a list of snacks, have the possibility to confirm their selection and display the corresponding generated ticket.
+Your mission will be to build a web application where the client can see both a list of films and a list of snacks, have the possibility to confirm their selection and display the corresponding generated ticket.
 
-Right now due to the traffic we are generating, we are averaging over 10 seconds to generate the ticket.
+Right now due to the high amount of clients accessing our website, we are averaging over 10 seconds to generate the ticket.
 
 As part of the challenge we need your help in order to reduce this delay as much as possible.
 
