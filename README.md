@@ -143,6 +143,7 @@ git clone https://github.com/Creditas/frontend-challenge-vlc.git
 ### Stack
 
 - You are free to choose the stack and language that you feel comfortable with!
+- In case of doubt which one to choose, we prefer React over Vue or Angular since that's the stack we are currently using at Creditas
 
 ## Evaluation
 
