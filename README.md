@@ -41,7 +41,7 @@ As part of the challenge we need your help in order to reduce this delay as much
         id: string,
         title: string,
         genre: string,
-        price: string,
+        price: number,
         imageUrl: string,
       },
     ];
@@ -112,24 +112,6 @@ The template requires some css rules in order to be displayed as proposed in the
 
 ![Mobile version](./mobile-layout.png)
 
-## Development
-
-### Prerequisites
-
-You will need to install on your machine:
-
-- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) in order to clone the repository containing this challenge and submit the pull request with your solution.
-
-### Configuration to run the environment
-
-By executing the following lines of code in your terminal you will be able to:
-
-- Clone the repository containing this challenge.
-
-```shell
-git clone https://github.com/Creditas/frontend-challenge-vlc.git
-```
-
 ## Your solution
 
 ### Must have
@@ -155,7 +137,8 @@ Some other things that matter to us:
 
 ## Delivering the challenge
 
-- Please send us via email your solution into a zip file.
+- Once you are happy with your solution, please upload it to a **private** github repository and grant access to **@Creditas/valencia-frontend**.
+
 - In the meantime, please give us your sincere (no sugar coating!) [opinion](https://docs.google.com/forms/d/e/1FAIpQLSdwjudz38JMtMYf3rFBrMHX3XMy2J5oBLPnjBGD1QKvOM2SGg/viewform) on the challenge. We would like you to receive it **even if you didn't finish the challenge**. Here at Creditas, constructive feedbacks are part of our culture.
 
 Thanks for your time and interest in joining us!!
