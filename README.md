@@ -6,6 +6,8 @@ This is a challenge designed to measure the candidate's expertise.
 
 In this challenge, we focus both on code design and design patterns in JavaScript.
 
+In order to align expectations, we consider that you should spend **not more than 6 hours** to finish the challenge.
+
 At Creditas, we value giving (and receiving) constructive feedback, therefore we will always dedicate the outmost attention to every solution submitted, contacting you back with the positive aspects of your submission and what could be improved.
 
 Just for that, it is worth trying! :). We also ask you to help us to improve our hiring process, at the end of this file you will find a form allowing you to share your impressions with us
