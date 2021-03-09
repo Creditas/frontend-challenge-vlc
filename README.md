@@ -125,7 +125,6 @@ The template requires some css rules in order to be displayed as proposed in the
 ### Stack
 
 - You are free to choose the stack and language that you feel comfortable with!
-- In case of doubt which one to choose, we prefer React over Vue or Angular since that's the stack we are currently using at Creditas
 
 ## Evaluation
 
