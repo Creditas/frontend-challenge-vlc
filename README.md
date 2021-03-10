@@ -106,6 +106,10 @@ As part of the challenge we need your help in order to reduce this delay as much
 
 The template requires some css rules in order to be displayed as proposed in the screenshots provided. Feel free to use any property you feel like to achieve so.
 
+#### Styleguide
+
+![Styleguide](./styleguide.png)
+
 #### Desktop version
 
 ![Desktop version](./desktop-layout.png)
