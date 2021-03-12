@@ -66,7 +66,7 @@ As part of the challenge we need your help in order to reduce this delay as much
   }
   ```
 
-- POST https://frontend-challenge-vlc-api.public.dev.creditas.io/api/films/confirm
+- POST https://frontend-challenge-vlc-api.public.dev.creditas.io/api/film/confirm
 
   request
 
@@ -84,7 +84,7 @@ As part of the challenge we need your help in order to reduce this delay as much
   }
   ```
 
-- POST https://frontend-challenge-vlc-api.public.dev.creditas.io/api/snacks/confirm
+- POST https://frontend-challenge-vlc-api.public.dev.creditas.io/api/snack/confirm
 
   request
 
