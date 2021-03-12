@@ -34,7 +34,7 @@ As part of the challenge we need your help in order to reduce this delay as much
 
 - GET https://frontend-challenge-vlc-api.public.dev.creditas.io/api/films
 
-  response
+  response (json)
 
   ```javascript
   {
@@ -52,7 +52,7 @@ As part of the challenge we need your help in order to reduce this delay as much
 
 - GET https://frontend-challenge-vlc-api.public.dev.creditas.io/api/snacks
 
-  response
+  response (json)
 
   ```javascript
   {
@@ -68,7 +68,7 @@ As part of the challenge we need your help in order to reduce this delay as much
 
 - POST https://frontend-challenge-vlc-api.public.dev.creditas.io/api/film/confirm
 
-  request
+  request body (json)
 
   ```javascript
   {
@@ -76,7 +76,7 @@ As part of the challenge we need your help in order to reduce this delay as much
   }
   ```
 
-  response
+  response (json)
 
   ```javascript
   {
@@ -86,7 +86,7 @@ As part of the challenge we need your help in order to reduce this delay as much
 
 - POST https://frontend-challenge-vlc-api.public.dev.creditas.io/api/snack/confirm
 
-  request
+  request body (json)
 
   ```javascript
   {
@@ -94,7 +94,7 @@ As part of the challenge we need your help in order to reduce this delay as much
   }
   ```
 
-  response
+  response (json)
 
   ```javascript
   {
