@@ -4,7 +4,7 @@
 
 This is a challenge designed to measure the candidate's expertise.
 
-In this challenge, we focus both on code design and design patterns in JavaScript.
+In this challenge, we focus on **simple** and **clean** code design.
 
 In order to align expectations, we consider that you should spend **not more than 6 hours** to finish the challenge.
 
